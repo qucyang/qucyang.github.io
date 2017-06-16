@@ -1,76 +1,17 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>放假倒计时</title>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
-<style>
-	#t_d,#t_q,#t_z{font-size: 35px;}
-</style>
 <body>
-<div id="CountMsg" class="HotDate">
-    <b>周末：</b>
-    <span id="t_q">00天</span>
-    <span id="t_w">00时</span>
-    <span id="t_e">00分</span>
-    <span id="t_r">00秒</span>  
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <b>国庆节：</b>
-    <span id="t_z">00天</span>
-    <span id="t_x">00时</span>
-    <span id="t_c">00分</span>
-    <span id="t_v">00秒</span>
-</div>
-<script type="text/javascript">
-       function getETime(){
-        var t=new Date();
-        var month = t.getMonth()+1;
-        var date=t.getDate();
-        var d = t.getDay()
-        if(d == 1){
-        	date = date+4
-        }else if(d == 2){
-        	date = date+3
-        }else if(d == 3){
-        	date = date+2
-        }else if(d == 4){
-        	date = date+1
-        }else if(d == 5){
-        	date = date+0
-        }else if(d == 6){
-        	date = date+6
-        }else if(d == 7){
-        	date = date+5
-        }       	
-        var EndTime= new Date('2017/'+month+'/'+date+' 18:00:00'); //截止时间
-        var NowTime = new Date();
-        var t =EndTime.getTime() - NowTime.getTime();
-        var d=Math.floor(t/1000/60/60/24);
-        var h=Math.floor(t/1000/60/60%24);
-        var m=Math.floor(t/1000/60%60);
-        var s=Math.floor(t/1000%60);
-        document.getElementById("t_q").innerHTML = d + "天";
-        document.getElementById("t_w").innerHTML = h + "时";
-        document.getElementById("t_e").innerHTML = m + "分";
-        document.getElementById("t_r").innerHTML = s + "秒";
-    }
-    setInterval(getETime,1000);
-     
-    function getQTime(){
-	    var EndTime= new Date('2017/09/30 18:00:00'); //截止时间
-	    var NowTime = new Date();
-	    var t =EndTime.getTime() - NowTime.getTime();
-	    var d=Math.floor(t/1000/60/60/24);
-	    var h=Math.floor(t/1000/60/60%24);
-	    var m=Math.floor(t/1000/60%60);
-	    var s=Math.floor(t/1000%60);	
-	    document.getElementById("t_z").innerHTML = d + "天";
-	    document.getElementById("t_x").innerHTML = h + "时";
-	    document.getElementById("t_c").innerHTML = m + "分";
-	    document.getElementById("t_v").innerHTML = s + "秒";
-    }
-    setInterval(getQTime,1000); 
-</script>
-  
+
+<div id="root"></div>
+
+
+<script src="common.js"></script>
+<script src="index.js"></script>
+
 </body>
-</html> 
+</html>
