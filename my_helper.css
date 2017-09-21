@@ -1,0 +1,271 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    height: 100%;
+    font-family: "微软雅黑", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media all and (min-width:320px) {
+    html, body {
+        font-size: 42px;
+    }
+}
+
+@media all and (min-width:370px) {
+    html, body {
+        font-size: 49px;
+    }
+}
+
+@media all and (min-width:410px) {
+    html, body {
+        font-size: 54px;
+    }
+}
+
+@media all and (min-width:750px) {
+    html, body {
+        font-size: 100px;
+    }
+}
+
+.swiper-container,
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    /*background: #fff;*/
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    text-align: center;
+    font-size: .26rem;
+}
+
+.page-1 {
+    background: url(./images/my-helper/menu-bg-1.jpg) no-repeat left top / 100%,
+                url(./images/my-helper/menu-bg-2.jpg) no-repeat center bottom / 100% auto;
+}
+
+.main-title {
+    padding-top: .5rem;
+    font-weight: 500;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    margin-top: .6rem;
+    overflow: hidden;
+}
+
+.menu-link {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-link-1 {
+    left: .4rem;
+}
+.menu-link-2 {
+    left: 1.32rem;
+}
+.menu-link-3 {
+    left: 2.54rem
+}
+.menu-link-4 {
+    right: 2.17rem;
+}
+.menu-link-5 {
+    right: 2.04rem;
+}
+.menu-link-6 {
+    right: .66rem;
+}
+.menu-link-7 {
+    left: .39rem;
+}
+
+.menu-list h2 {
+    position: absolute;
+    top: .1rem;
+    width: .58rem;
+    height: .58rem;
+    color: white;
+}
+
+.menu-item-left .menu-link {
+    float: left;
+    background: url(./images/my-helper/title_left.png) no-repeat left top / auto 100%,
+                url(./images/my-helper/menu-number-right.png) no-repeat right top / auto 100%;
+}
+
+.menu-item-right .menu-link {
+    float: right;
+    background: url(./images/my-helper/title_right.png) no-repeat right top / auto 100%,
+                url(./images/my-helper/menu-number-left.png) no-repeat left top / auto 100%;
+}
+
+.menu-item-left h2 {
+    right: .07rem;
+}
+
+.menu-item-right h2 {
+    left: .07rem;
+}
+
+.menu-item-left .menu-text {
+    margin: 0 .64rem 0 1.07rem;
+}
+
+.menu-item-right .menu-text {
+    margin: 0 1.07rem 0 .64rem;
+}
+
+.menu-text {
+    display: block;
+    height: .73rem;
+    line-height: .73rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #234f82;
+    background: #9bdafb;
+}
+
+.menu-text-1 {
+    width: 2.79rem;
+}
+.menu-text-2 {
+    width: 2.09rem;
+}
+.menu-text-3 {
+    width: 3.28rem;
+}
+.menu-text-4 {
+    width: 3.59rem;
+}
+
+/* 每个页面 */
+.each-title {
+    display: inline-block;
+    margin: 71px auto 0;
+    padding: .22rem .46rem;
+    color: #2090e6;
+    font-size: .44rem;
+    font-weight: 500;
+    background: url(./images/my-helper/each-title-left.jpg) no-repeat left top / auto .26rem,
+                url(./images/my-helper/each-title-right.jpg) no-repeat right bottom / auto .26rem;
+}
+
+
+.page-main-image-1 {
+    margin-top: 1.2rem;
+    height: 2.2rem;
+}
+.page-main-image-2 {
+    margin-top: 1.2rem;
+    height: 2.48rem;
+}
+.page-main-image-3 {
+    margin-top: 1.2rem;
+    height: 2.66rem;
+}
+.page-main-image-4 {
+    margin-top: 1.2rem;
+    height: 2.69rem;
+}
+.page-main-image-5 {
+    margin-top: 1.2rem;
+    height: 2.71rem;
+}
+.page-main-image-6 {
+    margin-top: 1.2rem;
+    height: 3.03rem;
+}
+.page-main-image-7 {
+    margin-top: 1.2rem;
+    height: 2.99rem;
+}
+
+.each-text {
+    margin: 1.5rem .46rem 0;
+    font-size: .32rem;
+    line-height: 1.6;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.button-box {
+    position: absolute;
+    bottom: 1.1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 .26rem;
+    border-radius: .5rem;
+    width: 3.1rem;
+    height: .85rem;
+    line-height: .85rem;
+    font-size: .38rem;
+    color: white;
+    background: #2090e6;
+    box-shadow: 0 .11rem .16rem #6db6ef;
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    z-index: 1;
+}
+
+.cover-inner {
+    margin: .2rem;
+    background: white;
+    box-shadow: 0 .1rem .1rem #aaa;
+}
+
+.cover-header {
+    padding: .4rem;
+    border-bottom: 1px solid #aaa;
+    line-height: 1;
+    font-size: .4rem;
+}
+
+.cover-close {
+    float: right;
+    width: .4rem;
+    height: .4rem;
+    background: url(./images/my-helper/cover-close.png) no-repeat center center / .4rem .4rem;
+}
+
+.cover-body-wrap {
+    height: 10rem;
+    overflow-y: scroll;
+}
+
+.cover-body {
+    padding: .4rem;
+    font-size: .36rem;
+    line-height: 1.8;
+    text-indent: 2em;
+}
+

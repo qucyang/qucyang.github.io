@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <title>普益标准小助手</title>
+    <link rel="stylesheet" href="./swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./my_helper.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page-1">
+                <h1 class="main-title">小助手</h1>
+                <ul class="menu-list">
+                    <li class="menu-item menu-item-left ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><a href="javascript:void(0);" class="menu-link menu-link-1" onclick="scrollAnchor(1)"><h2><span>1</span></h2><span class="menu-text menu-text-1">银行理财产品评价</span></a></li>
+                    <li class="menu-item menu-item-left ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><a href="javascript:void(0);" class="menu-link menu-link-2" onclick="scrollAnchor(2)"><h2><span>2</span></h2><span class="menu-text menu-text-1">公募基金评价</span></a></li>
+                    <li class="menu-item menu-item-left ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s"><a href="javascript:void(0);" class="menu-link menu-link-3" onclick="scrollAnchor(3)"><h2><span>3</span></h2><span class="menu-text menu-text-1">银行理财能力排名</span></a></li>
+                    <li class="menu-item menu-item-right ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"><a href="javascript:void(0);" class="menu-link menu-link-4" onclick="scrollAnchor(4)"><h2><span>4</span></h2><span class="menu-text menu-text-2">普益精选</span></a></li>
+                    <li class="menu-item menu-item-right ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><a href="javascript:void(0);" class="menu-link menu-link-5" onclick="scrollAnchor(5)"><h2><span>5</span></h2><span class="menu-text menu-text-3">净值型银行理财产品</span></a></li>
+                    <li class="menu-item menu-item-right ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s"><a href="javascript:void(0);" class="menu-link menu-link-6" onclick="scrollAnchor(6)"><h2><span>6</span></h2><span class="menu-text menu-text-4">净值型产品净值回撤提醒</span></a></li>
+                    <li class="menu-item menu-item-left ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"><a href="javascript:void(0);" class="menu-link menu-link-7" onclick="scrollAnchor(7)"><h2><span>7</span></h2><span class="menu-text menu-text-4">公墓基金详情(雷达图)</span></a></li>
+                </ul>
+            </div>
+            <div class="swiper-slide">
+                <div><h1 class="each-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">银行理财产品评价</h1></div>
+                <div><img class="page-main-image-1" src="./images/bank_e.png" alt="银行理财产品评价"></div>
+                <div><p class="each-text">产品评价按风险调整后收益率高低排序，该结果针对当天在售的预期收益型人民币产品进行。</p></div>
+                <div class="button-box">
+                    <a class="button cover-open" href="javascript:void(0)" data-number="1">查看详情</a>
+                    <a class="button" href="javascript:void(0)" onclick="scrollAnchor(0)">返回菜单</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div><h1 class="each-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">公募基金评价</h1></div>
+                <div><img class="page-main-image-2" src="./images/fund_e.png" alt="公募基金评价"></div>
+                <div><p class="each-text">公募基金采用以风险调整后收益为主、业绩持续性为辅的评价方式，以体现基金管理能力和业绩持续能力。</p></div>
+                <div class="button-box">
+                    <a class="button cover-open" href="javascript:void(0)" data-number="2">查看详情</a>
+                    <a class="button" href="javascript:void(0)" onclick="scrollAnchor(0)">返回菜单</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div><h1 class="each-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">银行理财能力排名</h1></div>
+                <div><img class="page-main-image-3" src="./images/rank.png" alt="银行理财能力排名"></div>
+                <div><p class="each-text">排名类型包括按理财能力排名、零售理财能力排名、理财能力按省份排名三大类。</p></div>
+                <div class="button-box">
+                    <a class="button cover-open" href="javascript:void(0)" data-number="3">查看详情</a>
+                    <a class="button" href="javascript:void(0)" onclick="scrollAnchor(0)">返回菜单</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div><h1 class="each-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">普益精选</h1></div>
+                <div><img class="page-main-image-4" src="./images/choose.png" alt="普益精选"></div>
+                <div><p class="each-text">对当天在售的全部预期收益型银行理财产品划分为24组，计算每组的平均收益率并以此设定为阈值。</p></div>
+                <div class="button-box">
+                    <a class="button cover-open" href="javascript:void(0)" data-number="4">查看详情</a>
+                    <a class="button" href="javascript:void(0)" onclick="scrollAnchor(0)">返回菜单</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div><h1 class="each-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">净值型银行理财产品</h1></div>
+                <div><img class="page-main-image-5" src="./images/bank_p.png" alt="净值型银行理财产品"></div>
+                <div><p class="each-text">基于净值型银行理财产品特性，对年化收益率计算。</p></div>
+                <div class="button-box">
+                    <a class="button cover-open" href="javascript:void(0)" data-number="5">查看详情</a>
+                    <a class="button" href="javascript:void(0)" onclick="scrollAnchor(0)">返回菜单</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div><h1 class="each-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">净值型产品净值回撤提醒</h1></div>
+                <div><img class="page-main-image-6" src="./images/remind.png" alt="净值型产品净值回撤提醒"></div>
+                <div><p class="each-text">一旦最新净值低于设定的回撤幅度，即对关注产品进行标红处理。</p></div>
+                <div class="button-box">
+                    <a class="button cover-open" href="javascript:void(0)" data-number="6">查看详情</a>
+                    <a class="button" href="javascript:void(0)" onclick="scrollAnchor(0)">返回菜单</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div><h1 class="each-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">公墓基金详情(雷达图)</h1></div>
+                <div><img class="page-main-image-7" src="./images/radar.png" alt="公墓基金详情(雷达图)"></div>
+                <div><p class="each-text">展示雷达图的基金类型只包括股票型、债券型、偏股混合型、偏债混合型四类，且存续期超过39月。</p></div>
+                <div class="button-box">
+                    <a class="button cover-open" href="javascript:void(0)" data-number="7">查看详情</a>
+                    <a class="button" href="javascript:void(0)" onclick="scrollAnchor(0)">返回菜单</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="cover" class="cover">
+        <div class="cover-inner">
+            <div class="cover-header">
+                <a id="coverClose" class="cover-close" href="javascript:void(0);"></a>
+                <span id="coverTitle" class="cover-text"></span>
+            </div>
+            <div class="cover-body-wrap">
+                <div id="coverBody" class="cover-body"></div>
+            </div>
+        </div>
+    </div>
+<script src="./zepto.min.js"></script>
+<script src="./swiper-3.4.2.jquery.min.js"></script>
+<script src="swiper.animate1.0.2.min.js"></script>
+<script>
+    var doc = $(document);
+    var textArr = [
+            '<p>产品评价按风险调整后收益率高低排序，该结果针对当天在售的预期收益型人民币产品进行，结构性、净值型、外资银行以及三钻以下产品暂无评价。</p>5钻石：调整违约风险和流动性风险后，该产品提供最高等级超额收益。<p></p><p>4钻石：调整违约风险和流动性风险后，该产品提供较高等级超额收益。</p><p>3钻石：调整违约风险和流动性风险后，该产品提供中等等级超额收益。</p>',
+            '',
+            '<p>排名类型包括按理财能力排名、零售理财能力排名、理财能力按省份排名三大类；其中理财能力按省份排名时，只包括该省内的城市商业银行与农村金融机构；每一直辖市内城市商业银行与农村金融机构较少，因此将四个直辖市内共计10家银行机构合并排名。<p/>',
+            '<p>根据收益类型（两档）、投资起点（三档）、投资期限（四档）对当天在售的全部预期收益型银行理财产品划分为24组，计算每组的平均收益率并以此设定为阈值；根据具体城市可买产品，同样划分为24组，且将收益率低于阈值产品剔除；每组产品根据收益率高低进行排序，选取收益率前三位产品，若产品不足3款，按真实款数进行选取。<p/>',
+            '<p>基于净值型银行理财产品特性，年化收益率计算遵循如下步骤：公布累计净值，按累计净值计算；不公布累计净值但公布单位净值，按单位净值计算；不公布净值信息但披露当日收益率，按该收益率计算；不公布当日收益率但公布七日年化收益率，按七日年化收益率计算。</p><p>披露净值信息产品年化收益率计算方式：[区间期末净值-区间期初净值]/区间期初净值*100%，并将该指标做年化处理。<p/><p>披露收益率信息产品年化收益率计算方式：（∑（xi）/n，xi为基金当日披露的收益率。<p/>',
+            '<p>净值回撤提醒只针对公布净值信息的净值型银行理财产品，回撤提醒以关注之日起净值型产品当日净值为准，一旦最新净值低于设定的回撤幅度，即对关注产品进行标红处理。</p>',
+            '<p>展示雷达图的基金类型只包括股票型、债券型、偏股混合型、偏债混合型四类，且存续期超过39月。</p><p>股票型和债券型雷达图指标包括选证能力、择时能力、业绩持续性、超额收益、风险、风格稳定性；偏股混合型和偏债混合型雷达图指标包括选证能力、择时能力、业绩持续性、超额收益、风险。</p><p>选证能力和择时能力采用TM和HM模型评定。业绩持续性采用联表法，根据各基金夏普比按30%-40%-30%进行排序，并以此标示为赢家、平家、输家类型；比较前后两时期该基金排序变动情况并进行打分，加总得到该基金过去三年的总得分，并以此排序衡量业绩持续性强弱。超额收益采用经风险因子调整后的收益表示。风险指最大回撤值，分别计算该基金过去3年、过去2年、过去1年、过去半年最大回撤，对回撤值分别赋予不同权重加权得到总回撤值。风格稳定性采用持仓风格变动率法，根据基金详细持仓数据，计算基金持仓风格变化情况并进行赋值。</p><p>雷达图指标原始值均进行标准化处理，并落在[0,100]区间；除风险指标外，其余指标数值越大代表该指标表现越好。</p>'
+    ];
+
+    var titleArr = [
+            '银行理财产品评价',
+            '公募基金评价',
+            '银行理财能力排名',
+            '普益精选',
+            '净值型银行理财产品',
+            '净值型产品净值回撤提醒',
+            '公墓基金详情(雷达图)'
+    ];
+
+	doc.ready(function () {
+	    var cover = $('#cover');
+        var coverClose = $('#coverClose');
+        var coverTitle = $('#coverTitle');
+	    var coverBody = $('#coverBody');
+
+        doc.on('click', '.cover-open', function () {
+            var $this = $(this);
+            var number = $this.data('number') - 1;
+            var title = titleArr[number];
+            var html = textArr[number];
+
+            coverTitle.html(title);
+            coverBody.html(html);
+            cover.show(300);
+        });
+
+        coverClose.on('click', function () {
+           cover.hide(300);
+        });
+	});
+
+	var mySwiper = new Swiper ('.swiper-container', {
+		direction: 'vertical',
+		pagination: '.swiper-pagination',
+		mousewheelControl : true,
+		onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			swiperAnimateCache(swiper); //隐藏动画元素
+			swiperAnimate(swiper); //初始化完成开始动画
+		},
+		onSlideChangeEnd: function(swiper){
+			swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+		}
+	});
+
+	function scrollAnchor(index) {
+		mySwiper.slideTo(index, 1000, true);
+	}
+
+</script>
+</body>
+</html>
